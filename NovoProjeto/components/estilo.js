@@ -6,6 +6,7 @@ export default StyleSheet.create({
     color: "white",
     textAlign: "center",
     textAlignVertical: "center",
+    padding: 20,
     fontSize: 20,
     height: 150,
     width: 150,

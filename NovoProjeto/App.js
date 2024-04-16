@@ -1,15 +1,13 @@
 import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
-import Primeiro from "./components/Primeiro";
-import CompoPadrao, { Comp1, Comp2 } from "./components/Multi";
+import MinMax from "./components/MinMax";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Primeiro />
-      <CompoPadrao />
-      <Comp1 />
-      <Comp2 />
+      <MinMax params={{n1: 50 , n2: 50}}/>
+      <MinMax params={{n1: 5 , n2: 50}}/>
+      <MinMax params={{n1: 500 , n2: 50}}/>
     </SafeAreaView>
   );
 }
