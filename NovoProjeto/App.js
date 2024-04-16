@@ -6,22 +6,19 @@ import CompoPadrao, { Comp1, Comp2 } from "./components/Multi";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Primeiro/>
-      <CompoPadrao/>
-      <Comp1/>
-      <Comp2/>
+      <Primeiro />
+      <CompoPadrao />
+      <Comp1 />
+      <Comp2 />
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  text: {
-    color: "white",
-    fontSize: 20,
+    backgroundColor: "lightblue",
   },
 });
