@@ -2,13 +2,17 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   textoGrande: {
-    backgroundColor: "lightgreen",
-    color: "white",
+    color: "black",
     textAlign: "center",
     textAlignVertical: "center",
     padding: 20,
     fontSize: 20,
-    height: 150,
-    width: 200,
+  },
+  textoPequeno: {
+    color: "black",
+    textAlign: "center",
+    textAlignVertical: "center",
+    padding: 20,
+    fontSize: 15,
   },
 });
