@@ -9,6 +9,6 @@ export default StyleSheet.create({
     padding: 20,
     fontSize: 20,
     height: 150,
-    width: 150,
+    width: 200,
   },
 });
