@@ -2,12 +2,16 @@ import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
 import Contador from "./components/Contador";
 import Temp from "./components/temp";
+import Pai from "./components/indireta/Pai";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Contador inicial={10} passo={2} />
-      <Temp />
+      <Pai/>
+      <Pai/>
+      <Pai/>
+      <Pai/>
+      <Pai/>
     </SafeAreaView>
   );
 }
