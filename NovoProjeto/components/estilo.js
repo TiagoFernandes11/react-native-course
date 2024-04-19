@@ -12,7 +12,6 @@ export default StyleSheet.create({
     color: "black",
     textAlign: "center",
     textAlignVertical: "center",
-    padding: 20,
     fontSize: 15,
   },
 });
