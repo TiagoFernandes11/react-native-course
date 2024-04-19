@@ -3,15 +3,14 @@ import { StyleSheet, SafeAreaView } from "react-native";
 import Contador from "./components/Contador";
 import Temp from "./components/temp";
 import Pai from "./components/indireta/Pai";
+import UsuarioLogado from "./components/UsuarioLogado";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Pai/>
-      <Pai/>
-      <Pai/>
-      <Pai/>
-      <Pai/>
+      <UsuarioLogado
+        usuario={{ nome: "Sara", sobrenome: "Fernandes Ribeiro de Brito" }}
+      />
     </SafeAreaView>
   );
 }
