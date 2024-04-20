@@ -6,13 +6,19 @@ import Pai from "./components/indireta/Pai";
 import UsuarioLogado from "./components/UsuarioLogado";
 import ListaProdutos from "./components/produtos/ListaProdutos";
 import DigiteSeuNome from "./components/DigiteSeuNome";
+import Quadrado from "./components/layout/Quadrado";
+import FlexBoxv1 from "./components/layout/FlexBoxv1";
+import FlexBoxV2 from "./components/layout/FlexBoxV2";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <DigiteSeuNome />
+      <FlexBoxV2 />
     </SafeAreaView>
   );
+}
+{
+  /* <DigiteSeuNome /> */
 }
 {
   /* <ListaProdutos/> */
