@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 
 export default (props) => {
-  const lado = 100;
+  const lado = 35;
   return (
     <View
       style={{

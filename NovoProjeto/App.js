@@ -9,11 +9,12 @@ import DigiteSeuNome from "./components/DigiteSeuNome";
 import Quadrado from "./components/layout/Quadrado";
 import FlexBoxv1 from "./components/layout/FlexBoxv1";
 import FlexBoxV2 from "./components/layout/FlexBoxV2";
+import FlexBoxV3 from "./components/layout/FlexBoxV3";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <FlexBoxV2 />
+      <FlexBoxV3 />
     </SafeAreaView>
   );
 }
