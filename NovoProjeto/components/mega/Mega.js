@@ -5,6 +5,7 @@ import estilo from "../estilo";
 export default class Mega extends React.Component {
   state = {
     qtdeNumeros: this.props.qtdeNumeros,
+    shouldShow: false,
     numeros: [],
   };
 
@@ -16,22 +17,20 @@ export default class Mega extends React.Component {
     qtd = this.state.qtdeNumeros;
     vetor = [];
     while (vetor.length < qtd) {
-      temp = Math.round(Math.random() * 100);
+      temp = Math.round(Math.random() * 60) + 1;
       if (!vetor.includes(temp)) {
-        vetor.push(temp);
+        vetor.push(temp + " ");
       }
     }
-    vetor.sort();
-    console.log(vetor)
+    vetor = vetor.sort();
     this.setState({ numeros: vetor });
+    this.state.shouldShow = true;
   }
 
   render() {
     return (
       <View>
-        <Text style={estilo.textoGrande}>
-          Gerador de Mega-Sena {this.state.qtdeNumeros}
-        </Text>
+        <Text style={estilo.textoGrande}>Gerador de Mega-Sena</Text>
         <TextInput
           keyboardType="numeric"
           placeholder="Qtde de Números"
@@ -40,6 +39,12 @@ export default class Mega extends React.Component {
           onChangeText={(qtde) => this.alterarQtdeNumero(qtde)}
         />
         <Button title="Generate" onPress={() => this.gerarNumeros()}></Button>
+        {this.state.shouldShow ? (
+          <Text>
+            Resultado:
+            {this.state.numeros}
+          </Text>
+        ) : null}
       </View>
     );
   }
