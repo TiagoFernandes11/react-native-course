@@ -1,17 +1,17 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 
-export default function Mine(props) {
+export default (props) => {
   return (
     <View style={styles.container}>
-      <View style={styles.coreMine}></View>
-      <View style={styles.line}></View>
-      <View style={[styles.line, { transform: [{ rotate: "45deg" }] }]}></View>
-      <View style={[styles.line, { transform: [{ rotate: "90deg" }] }]}></View>
-      <View style={[styles.line, { transform: [{ rotate: "135deg" }] }]}></View>
+      <View style={StyleSheet.coreMine} />
+      <View style={styles.line} />
+      <View style={[styles.line, { transform: [{ rotate: "45deg" }] }]} />
+      <View style={[styles.line, { transform: [{ rotate: "90deg" }] }]} />
+      <View style={[styles.line, { transform: [{ rotate: "135deg" }] }]} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

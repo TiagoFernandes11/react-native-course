@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-export default function Flag(props) {
+export default (props) => {
   return (
     <View style={styles.container}>
       <View
@@ -12,7 +12,7 @@ export default function Flag(props) {
       <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
